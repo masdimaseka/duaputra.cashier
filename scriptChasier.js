@@ -102,20 +102,6 @@ if (accessTransaction("GET") === null) {
   accessTransaction("SET", []);
 }
 
-// alert
-const alertNone = document.getElementById("alert__none");
-const alertNotFound = document.getElementById("alert__notFound");
-const alertNotInput = document.getElementById("alert__notIncludeJum");
-const closeAlertNone = () => {
-  alertNone.classList.remove("alert__status");
-};
-const closeAlertNotFound = () => {
-  alertNotFound.classList.remove("alert__status");
-};
-const closeAlertNotInput = () => {
-  alertNotInput.classList.remove("alert__status");
-};
-
 const clearDisplay = () => {
   resaultKasir.innerHTML = "";
   total.innerHTML = "<h3>-</h3>";

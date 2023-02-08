@@ -1,0 +1,18 @@
+@import url(./rules/rules.css);
+
+.alert__status {
+  display: flex !important;
+}
+
+.alert__container {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.alert__danger {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  margin: 1.5rem 0 0 0;
+}

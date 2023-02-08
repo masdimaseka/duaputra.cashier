@@ -1,0 +1,41 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #37cfff;
+  --color-secondary: #ff8a00;
+  --color-success: #37ff7b;
+  --color-danger: #ff3737;
+  --color-bg-1: #f1f8ff;
+  --color-txt: #121212;
+  --color-white: #fff;
+  --color-primary-1: #28a4fe;
+  --color-danger-1: #d72929;
+  --color-success-1: #00e44e;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 300ms ease;
+}
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg-1);
+}
+
+.uil {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}

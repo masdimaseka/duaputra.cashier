@@ -1,0 +1,67 @@
+@import url(./rules/rules.css);
+
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--color-white);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  font-weight: 500;
+  padding: 0.7rem 2rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-1);
+}
+
+.btn-success {
+  background-color: var(--color-success);
+  font-weight: 500;
+  padding: 0.7rem 2rem;
+}
+
+.btn-success:hover {
+  background-color: var(--color-success-1);
+}
+
+.btn-box-primary {
+  background-color: var(--color-primary);
+  padding: 0.5rem 0.7rem;
+}
+
+.btn-box-primary:hover {
+  background-color: var(--color-primary-1);
+}
+
+.btn-box-danger {
+  background-color: var(--color-danger);
+  padding: 0.5rem 0.7rem;
+}
+
+.btn-box-danger:hover {
+  background-color: var(--color-danger-1);
+}
+
+.btn-box-success {
+  background-color: var(--color-success);
+  padding: 0.5rem 0.7rem;
+}
+
+.btn-box-success:hover {
+  background-color: var(--color-success-1);
+}
+
+.resault__list .uil,
+.resault__list-history .uil,
+.resault__list-catalog .uil {
+  font-size: 1.1rem;
+}
+
+.btn-catalog .uil {
+  font-size: 1.1rem;
+}

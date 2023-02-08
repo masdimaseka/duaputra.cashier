@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>DPT KASIR</title>
+  </head>
+  <body>
+    <!-- === NAVBAR === -->
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html">
+          <img src="./imgs/dpt-logo.png" alt="logo" class="logo"
+        /></a>
+        <div class="nav__menu-2">
+          <a href="./index.html" class="btn btn-box-success"
+            ><i class="uil uil-estate"></i
+          ></a>
+          <a href="./history.html" class="btn btn-box-primary"
+            ><i class="uil uil-history"></i
+          ></a>
+          <a href="./list.html" class="btn btn-box-primary"
+            ><i class="uil uil-clipboard-notes"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <!-- === END-NAVBAR === -->
+
+    <!-- === KASIR === -->
+    <section>
+      <div class="container kasir__container">
+        <h1>Tambah Data Barang</h1>
+        <div class="inputing__container">
+          <input id="barang" type="text" placeholder="Nama Barang" />
+          <input id="harga" type="number" min="0" placeholder="Harga Barang" />
+          <button id="add-btn" class="btn btn-primary" onclick="addData()">
+            Tambah
+          </button>
+        </div>
+        <h1>Daftar Data Barang</h1>
+        <div id="resault" class="resault__container">
+          <div class="resault__header resault__list">
+            <div id="No">
+              <h5>No</h5>
+            </div>
+            <div id="nama">
+              <h5>Nama Barang</h5>
+            </div>
+            <div id="harga">
+              <h5>Harga</h5>
+            </div>
+            <div id="button">
+              <h5>Action</h5>
+            </div>
+          </div>
+          <div id="resault__main"></div>
+        </div>
+      </div>
+    </section>
+    <!-- === END-KASIR === -->
+
+    <script src="./scriptData.js"></script>
+  </body>
+</html>

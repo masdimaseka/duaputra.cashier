@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>DPT KASIR</title>
+  </head>
+  <body>
+    <!-- === NAVBAR === -->
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html">
+          <img src="./imgs/dpt-logo.png" alt="logo" class="logo"
+        /></a>
+        <div class="nav__menu-2">
+          <a href="./index.html" class="btn btn-box-success"
+            ><i class="uil uil-estate"></i
+          ></a>
+          <a href="./history.html" class="btn btn-box-primary"
+            ><i class="uil uil-history"></i
+          ></a>
+          <a href="./list.html" class="btn btn-box-primary"
+            ><i class="uil uil-clipboard-notes"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <!-- === END-NAVBAR === -->
+
+    <!-- === ALERT === -->
+    <div class="alert__danger">
+      <div id="alert__none" class="container alert__container">
+        <h5>Maaf kamu Tidak Memasukan Data</h5>
+        <a href="#" onclick="closeAlertNone()"><i class="uil uil-times"></i></a>
+      </div>
+    </div>
+
+    <div class="alert__danger">
+      <div id="alert__notFound" class="container alert__container">
+        <h5>Maaf Data Tidak Temukan</h5>
+        <a href="#" onclick="closeAlertNotFound()"
+          ><i class="uil uil-times"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="alert__danger">
+      <div id="alert__notIncludeJum" class="container alert__container">
+        <h5>Dimohon Untuk Melengkapi Data</h5>
+        <a href="#" onclick="closeAlertNotInput()"
+          ><i class="uil uil-times"></i
+        ></a>
+      </div>
+    </div>
+    <!-- === END-ALERT === -->
+
+    <!-- === KASIR === -->
+    <section>
+      <div class="container kasir__container">
+        <h1>History</h1>
+        <div class="resault__container">
+          <div class="resault__header resault__list-history">
+            <div id="date">
+              <h5>Tanggal</h5>
+            </div>
+            <div id="nama">
+              <h5>Nama Barang</h5>
+            </div>
+            <div id="harga">
+              <h5>Harga</h5>
+            </div>
+            <div id="jumlah">
+              <h5>Jumlah</h5>
+            </div>
+            <div id="jumlahHarga">
+              <h5>Jumlah Harga</h5>
+            </div>
+            <div id="jumlahHarga">
+              <h5>Action</h5>
+            </div>
+          </div>
+          <div id="resault__history"></div>
+        </div>
+      </div>
+    </section>
+    <!-- === END-KASIR === -->
+
+    <script src="./scriptData.js"></script>
+    <script src="./scriptChasier.js"></script>
+    <script src="./scriptHistory.js"></script>
+  </body>
+</html>
